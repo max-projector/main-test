@@ -1,0 +1,1496 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Course</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+  </head>
+  <body>
+    <div class="overlay js-overlay"></div>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="skip-content" id="skip">
+          <a class="skip-content__link" href="#content" tabindex="1">Skip to Main Content (Press Enter)</a>
+        </div>
+        <div class="header__container container container_wider">
+          <a href="#" class="header__logo logo">
+            <img class="logo__image" src="./img/logo.svg" alt="Логотип Projector" />
+          </a>
+          <button class="header__burger js-burger" type="button" aria-label="Открыть меню">
+            <svg class="icon icon-burger">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="header__close js-close" type="button" aria-label="Закрыть меню">
+            <svg class="icon icon-close-menu">
+              <use xlink:href="img/sprite.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="header__inner js-menu-inner">
+            <button class="header__login header__login_mob js-open-popup-button" type="button" data-popup="login">
+              <svg class="icon icon-user">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+              <span class="js-login">Увійти</span>
+            </button>
+            <nav class="header__menu menu js-menu">
+              <ul class="menu__list">
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Освіта <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/study-image.jpg" alt="Освіта" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Онлайн-курси</span>
+                          <span class="menu__subpoint-subtext">для розвитку в професії</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Гуманітаріум</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Курси для школярів</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Події <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/events-image.jpg" alt="Події" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Whatabout</span>
+                          <span class="menu__subpoint-subtext">global creative community</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Kruрa</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">OFFF Kyiv</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Воркшопи і лекції</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  is-active js-menu-point ">
+                  <a class="menu__link" href="main-page-unlogged.html" tabindex="1">Бібліотека</a>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Медіа <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/events-image.jpg" alt="Медіа" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Telegraf</span>
+                          <span class="menu__subpoint-subtext">провідне українське дизайн-медіа</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Рrjctr Mag</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Youtube</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-facebook">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Новини, роботи, люди</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-telegram">
+                            <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Вакансії та анонси</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-instagram">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Візуальне життя школи </span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Ми <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/we-image.jpg" alt="Ми" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Про Рrojector</span>
+                          <span class="menu__subpoint-subtext">історія і головні ідеї школи</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Люди</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Співпраця</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Контакти</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__actions">
+              <div class="header__restream"> <span>powered by </span><img src="./icons/restream.svg" alt="" /></div>
+              <a class="header__phone" href="tel:0970159272" tabindex="1">097 015-92-72</a>
+              <form class="header__languages js-languages" action="#" method="get">
+                <button class="header__languages-button js-languages-button" type="button" aria-label="Выбор языка" tabindex="1">
+                  <span class="header__languages-text js-languages-text">UKR</span>
+                  <svg class="icon icon-arrow-down">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <ul class="header__languages-list js-languages-options">
+                  <li class="header__languages-item js-languages-item">RU</li>
+                  <li class="header__languages-item js-languages-item">ENG</li>
+                </ul>
+                <select class="header__languages-select js-languages-hidden" id="languages" name="languages" required>
+                  <option value="UKR">UKR</option>
+                  <option value="RU">RU</option>
+                  <option value="ENG">ENG</option>
+                </select>
+              </form>
+              <button class="header__login js-open-popup-button" type="button" data-popup="login" tabindex="1">
+                <svg class="icon icon-user">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <span>Увійти</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <script src="../js/lib/carousely.js"></script>
+      <style>
+        .container_padding-small
+        {
+          padding-top: 20px;
+        }
+
+      </style>
+      <div>
+        <div class="container container_padding-min">
+          <!-- begin intro -->
+          <section class="course-intro">
+            <div class="course-section">
+              <div class="course-intro__wrapper">
+                <div class="course-intro__info">
+                  <a class="pagination-top__back-button course-intro__back-button back-button" href="main-page-unlogged.html">
+                    <img src="https://d3n32ilufxuvd1.cloudfront.net/52610615b263af5f64000ad9/600f278af9233500c0e95751/upload-e4fc0451-305c-4430-b8fc-24570dfe4aa1.png" />
+                  </a>
+                  <span class="course-intro__breadcrumb">
+                    <a rel="noopener noreferrer" target="_self" href="http://prjctr.com.ua">Graphics &amp; Media School</a>
+                  </span>
+                  <span class="course-intro__title">C4D Typography Course</span>
+                  <p class="course-intro__desc"> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. </p>
+                </div>
+                <div class="course-intro__support">
+                  <span>ЗА ПІДТРИМКИ</span>
+                  <img srcset="
+            https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-287391a3-3b48-4d85-ab89-d60ceb30b2ad.png?w=304&amp;e=webp&amp;nll=true 2x,
+            https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-287391a3-3b48-4d85-ab89-d60ceb30b2ad.png?w=456&amp;e=webp&amp;nll=true 3x
+          " src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-287391a3-3b48-4d85-ab89-d60ceb30b2ad.png?w=304&amp;e=webp&amp;nll=true" />
+                </div>
+              </div>
+              <button class="course-intro__register-btn">Реєстрація</button>
+            </div>
+          </section>
+          <script>
+            $(document).ready(function()
+            {
+              $(".course-intro__register-btn").click(function()
+              {
+                $("html, body").animate(
+                {
+                  scrollTop: $(".course-registration").offset().top - 100,
+                }, 2000);
+              });
+            });
+
+          </script>
+          <!-- end intro -->
+          <div class="course-video-intro">
+            <div class="course-video-intro__widget-shape">
+              <button class="js-open-popup-button" data-popup="video-promo">
+                <img src="./icons/play-btn.svg" alt="" />
+              </button>
+            </div>
+            <img src="./img/intro.png" class="course-video-intro__viewable" style="width: 100%; border-radius: 20px" />
+          </div>
+          <div class="inner js-inner">
+            <!-- begin course-menu -->
+            <div class="course-menu js-filters-slider" id="menu-center">
+              <ul class="course-menu__list">
+                <li class="course-menu__point js-course-menu-point is-active" tabindex="1">
+                  <a class="course-menu__button" href="#about">
+                    <span class="course-menu__name">Про курс</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#curator">
+                    <span class="course-menu__name">Наставник</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#program">
+                    <span class="course-menu__name">Програма</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#cases">
+                    <span class="course-menu__name">Кейси</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#for-whom">
+                    <span class="course-menu__name">Для кого?</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#about-training">
+                    <span class="course-menu__name">Про навчання</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#partners">
+                    <span class="course-menu__name">Партнери</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#reviews">
+                    <span class="course-menu__name">Відгуки</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#networking">
+                    <span class="course-menu__name">Нетворкинг</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point" tabindex="1">
+                  <a class="course-menu__button" href="#questions">
+                    <span class="course-menu__name">Питання</span></a>
+                </li>
+                <li class="course-menu__point js-course-menu-point course-menu__register-btn" tabindex="1">
+                  <a class="course-menu__button">
+                    <span class="course-menu__name">Реєстрація</span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- end course-menu -->
+            <script>
+              $(function()
+              {
+                $('.course-menu__list a').click(function()
+                {
+                  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname)
+                  {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length)
+                    {
+                      $('html,body').stop();
+                      $('html,body').animate(
+                      {
+                        scrollTop: target.offset().top - 68
+                      }, 700);
+                      // $(".course-menu__list > li").removeClass("is-active");
+                      $(this).addClass("is-active");
+                      return false;
+                    }
+                  }
+                });
+                $(window).scroll(function()
+                {
+                  $(".scroll-section").each(function()
+                  {
+                    if (ScrollView($(this)))
+                    {
+                      var id = $(this).attr("id");
+                      $(".course-menu__list > li").removeClass("is-active");
+                      $(".course-menu__list > li > a[href='#" + id + "']").parent().addClass("is-active");
+                    }
+                  });
+                });
+
+                function ScrollView(element)
+                {
+                  var win = $(window);
+                  var winTop = win.scrollTop();
+                  var winBottom = winTop + win.height();
+                  var elementTop = element.offset().top;
+                  var elementBottom = elementTop + element.height();
+                  if (elementBottom <= winBottom && elementTop >= winTop)
+                  {
+                    return true;
+                  }
+                  return false;
+                }
+              });
+
+            </script>
+            <script>
+              $(document).ready(function()
+              {
+                $(".course-menu__register-btn").click(function()
+                {
+                  $('html,body').stop();
+                  $("html, body").animate(
+                  {
+                    scrollTop: $(".course-registration").offset().top - 100,
+                  }, 2000);
+                });
+              });
+
+            </script>
+            <!-- https://jsfiddle.net/JacquesMarais/umehyrza/6/ -->
+            <main class="main" id="content" style="margin-top: 0">
+              <div class="course-about scroll-section" id="about">
+                <h3 class="course-title">Про курс</h3>
+                <p> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. </p>
+                <div class="course-about__section">
+                  <div class="course-about__info">
+                    <img src="./img/calendar_icon.png" class="course-about__icon" />
+                    <span class="course-about__title">2 місяці</span>
+                    <span class="course-about__desc"> Курс триває з 1 січня по 27 березня 2020. Нові уроки відкриваються щосереди і щоп'ятниці, по суботах о 11:00 — живі вебінари</span>
+                  </div>
+                  <div class="course-about__info">
+                    <img src="./img/make_icon.png" class="course-about__icon" />
+                    <span class="course-about__title">7 000 грн / міс.</span>
+                    <span class="course-about__desc"> При оплаті повної суми, знижка 5%. Також можлива розстрочка від Monobank </span>
+                  </div>
+                  <div class="course-about__info">
+                    <img src="./img/head_icon.png" class="course-about__icon" />
+                    <span class="course-about__title">25 місць</span>
+                    <span class="course-about__desc"> каждый студент получает фидбек от куратора группы</span>
+                  </div>
+                </div>
+              </div>
+              <!-- begin course-mentor -->
+              <div class="course-mentor scroll-section" id="curator">
+                <div class="course-mentor_heading">
+                  <h3 class="course-title">Наставник</h3>
+                </div>
+                <div class="course-mentor">
+                  <img src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2521290/upload-56d6d010-cbd5-4e2b-bda2-4baaea640818.png?e=webp&nll=true&cX=0&cY=0&cW=900&cH=414" alt="" />
+                  <div class="course-mentor__section">
+                    <span class="course-mentor__name">Андрей Шевченко</span>
+                    <div class="course-mentor__desc">
+                      <p> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. Это практичный онлайн-курс об основах веб-дизайна для </p>
+                    </div>
+                    <img src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-d8b417e7-8ccb-46be-aa40-359b38714cc2.png?w=176&amp;e=webp&amp;nll=true" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- end course-mentor -->
+              <!-- begin course-mentors-slider -->
+              <div class="course-mentors-slider scroll-section" id="curators">
+                <div class="course-mentors-slider__heading">
+                  <h3 class="course-title">Наставники</h3>
+                </div>
+                <div class="course-mentors-slider__slider">
+                  <div class="course-mentors-slider__inner gallery js-carousely" data-carousely='{ "cellAlign": "left" }'>
+                    <div class="course-mentors-slider__student-card gallery-cell">
+                      <picture>
+                        <source media="(min-width: 1024px)" srcset="" />
+                        <img class="course-mentors-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-173e8594-af91-4ff4-9a83-53c0d1376ecc.png?w=580&amp;e=webp&amp;nll=true&amp;cX=138&amp;cY=0&amp;cW=409&amp;cH=630" alt="Фото лектора" />
+                      </picture>
+                      <span class="course-mentors-slider__position">Ментор групи а</span>
+                      <span class="course-mentors-slider__name">Андрей Шевченко</span>
+                      <div class="course-mentors-slider__feedback">
+                        <p class="course-mentors-slider__student-feedback"> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. Это практичный онлайн-курс об основах веб-дизайна для </p>
+                      </div>
+                      <img class="course-mentors-slider__company-logo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-d8b417e7-8ccb-46be-aa40-359b38714cc2.png?w=176&amp;e=webp&amp;nll=true" alt="" />
+                    </div>
+                    <div class="course-mentors-slider__student-card gallery-cell">
+                      <picture>
+                        <source media="(min-width: 1024px)" srcset="" />
+                        <img class="course-mentors-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-173e8594-af91-4ff4-9a83-53c0d1376ecc.png?w=580&amp;e=webp&amp;nll=true&amp;cX=138&amp;cY=0&amp;cW=409&amp;cH=630" alt="Фото лектора" />
+                      </picture>
+                      <span class="course-mentors-slider__position">Ментор групи а</span>
+                      <span class="course-mentors-slider__name">Андрей Шевченко</span>
+                      <div class="course-mentors-slider__feedback">
+                        <p class="course-mentors-slider__student-feedback"> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. Это практичный онлайн-курс об основах веб-дизайна для </p>
+                      </div>
+                      <img class="course-mentors-slider__company-logo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-d8b417e7-8ccb-46be-aa40-359b38714cc2.png?w=176&amp;e=webp&amp;nll=true" alt="" />
+                    </div>
+                    <div class="course-mentors-slider__student-card gallery-cell">
+                      <picture>
+                        <source media="(min-width: 1024px)" srcset="" />
+                        <img class="course-mentors-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-173e8594-af91-4ff4-9a83-53c0d1376ecc.png?w=580&amp;e=webp&amp;nll=true&amp;cX=138&amp;cY=0&amp;cW=409&amp;cH=630" alt="Фото лектора" />
+                      </picture>
+                      <span class="course-mentors-slider__position">Ментор групи а</span>
+                      <span class="course-mentors-slider__name">Андрей Шевченко</span>
+                      <div class="course-mentors-slider__feedback">
+                        <p class="course-mentors-slider__student-feedback"> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. Это практичный онлайн-курс об основах веб-дизайна для </p>
+                      </div>
+                      <img class="course-mentors-slider__company-logo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-d8b417e7-8ccb-46be-aa40-359b38714cc2.png?w=176&amp;e=webp&amp;nll=true" alt="" />
+                    </div>
+                    <div class="course-mentors-slider__student-card gallery-cell">
+                      <picture>
+                        <source media="(min-width: 1024px)" srcset="" />
+                        <img class="course-mentors-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-29831627-f5b5-4850-bef9-b86f76fc2c89.png?e=webp&amp;nll=true&amp;cX=38&amp;cY=0&amp;cW=417&amp;cH=640" alt="Фото лектора" />
+                      </picture>
+                      <span class="course-mentors-slider__position">Куратор</span>
+                      <span class="course-mentors-slider__name">Андрей Велес</span>
+                      <div class="course-mentors-slider__feedback">
+                        <p class="course-mentors-slider__student-feedback"> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. Это практичный онлайн-курс об основах веб-дизайна для </p>
+                      </div>
+                      <img class="course-mentors-slider__company-logo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-d8b417e7-8ccb-46be-aa40-359b38714cc2.png?w=176&amp;e=webp&amp;nll=true" alt="" />
+                    </div>
+                    <div class="course-mentors-slider__student-card gallery-cell">
+                      <picture>
+                        <source media="(min-width: 1024px)" srcset="" />
+                        <img class="course-mentors-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-29831627-f5b5-4850-bef9-b86f76fc2c89.png?e=webp&amp;nll=true&amp;cX=38&amp;cY=0&amp;cW=417&amp;cH=640" alt="Фото лектора" />
+                      </picture>
+                      <span class="course-mentors-slider__position">Куратор</span>
+                      <span class="course-mentors-slider__name">Андрей Велес</span>
+                      <div class="course-mentors-slider__feedback">
+                        <p class="course-mentors-slider__student-feedback"> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта и хотят попробовать себя в новой профессии. Это практичный онлайн-курс об основах веб-дизайна для </p>
+                      </div>
+                      <img class="course-mentors-slider__company-logo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-d8b417e7-8ccb-46be-aa40-359b38714cc2.png?w=176&amp;e=webp&amp;nll=true" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end course-mentors-slider -->
+              <div class="course-program scroll-section" id="program">
+                <h3 class="course-title">Програма</h3>
+                <div class="course-program__program">
+                  <div class="text text_large course-program__program__desc">
+                    <img src="./img/course-3.svg" alt="" />
+                  </div>
+                  <div class="course-program__program__list">
+                    <div class="course-program__program-module">
+                      <div class="course-program__program-module__items">
+                        <div class="course-program__program-module__item">
+                          <h4 class="course-program__title-reg course-program__title-reg_big course-program__program-module__item-title"> Інструмент </h4>
+                          <div class="course-program__text course-program__text_reg program-module__item-desc">
+                            <p> Знакомство с Figma. Базовый набор инструментов и основные принципы работы с инструментом. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-program__program-module">
+                      <div class="course-program__program-module__items">
+                        <div class="course-program__program-module__item">
+                          <h4 class="course-program__title-reg course-program__title-reg_big course-program__program-module__item-title"> Сетки </h4>
+                          <div class="course-program__text course-program__text_reg program-module__item-desc">
+                            <p> Базовые понятия про стандартные сетки и принципы работы с ними. </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-program__program-module">
+                      <div class="course-program__program-module__items">
+                        <div class="course-program__program-module__item">
+                          <h4 class="course-program__title-reg course-program__title-reg_big course-program__program-module__item-title"> Типографика и работа со шрифтами </h4>
+                          <div class="course-program__text course-program__text_reg program-module__item-desc">
+                            <p> Будем учиться правилам хорошего набора текста и инструментам для их реализации. Познакомимся с кнопками и полями ввода, узнаем секретную формулу хорошей кнопки :) </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-program__program-module">
+                      <div class="course-program__program-module__items">
+                        <div class="course-program__program-module__item">
+                          <h4 class="course-program__title-reg course-program__title-reg_big course-program__program-module__item-title"> Практическое применение </h4>
+                          <div class="course-program__text course-program__text_reg program-module__item-desc">
+                            <ul>
+                              <li> Да, он тоже нужен. Как понять, что творится у нас в базах и где что лежит; </li>
+                              <li>Переход от spreadsheet-ов к SQL: SELECT * FROM;</li>
+                              <li>Объединяем таблицы: JOIN, LEFT JOIN, INNER JOIN;</li>
+                              <li> Создаем новые таблицы и колонки: простые операции подсчета метрик; </li>
+                              <li> Считаем CTR, K-factor, вытягиваем данные для корреляционного анализа. </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- begin course-cases-slider -->
+              <div class="course-cases-slider scroll-section" id="cases">
+                <div class="course-cases-slider__heading">
+                  <h3 class="course-title">Кейси студентів</h3>
+                </div>
+                <div class="course-cases-slider__slider">
+                  <div class="course-cases-slider__inner gallery js-carousely" data-carousely='{ "cellAlign": "left" }'>
+                    <div class="course-cases-slider__case-card gallery-cell">
+                      <div class="course-cases-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="case-video">
+                          <img class="course-cases-slider__play-btn" src="./icons/play-btn.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-dcf1d32f-ae3c-4df7-b6bd-1ce4b08a19e9.png" />
+                          <img class="course-cases-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-dcf1d32f-ae3c-4df7-b6bd-1ce4b08a19e9.png" alt="Фото работы" />
+                        </picture>
+                      </div>
+                      <span class="course-cases-slider__position">Iнна Мірошнік</span>
+                      <span class="course-cases-slider__name">UX кейс для Uklon.ua</span>
+                    </div>
+                    <div class="course-cases-slider__case-card gallery-cell">
+                      <div class="course-cases-slider__image-section">
+                        <a href="https://books.ifmo.ru/file/pdf/1917.pdf" target="_blank">
+                          <img class="course-cases-slider__play-btn" src="./icons/file.svg" alt="" />
+                        </a>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-1d5f30a0-e3ec-41df-b25d-1cfc84f089ed.png" />
+                          <img class="course-cases-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-1d5f30a0-e3ec-41df-b25d-1cfc84f089ed.png" alt="Фото работы" />
+                        </picture>
+                      </div>
+                      <span class="course-cases-slider__position">Iнна Мірошнік</span>
+                      <span class="course-cases-slider__name">UX кейс для Uklon.ua</span>
+                    </div>
+                    <div class="course-cases-slider__case-card gallery-cell">
+                      <div class="course-cases-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="case-gallery">
+                          <img class="course-cases-slider__play-btn" src="./icons/gallery.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-7f5c4073-66b6-49bd-954e-9d000dafb8b1.png" />
+                          <img class="course-cases-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-7f5c4073-66b6-49bd-954e-9d000dafb8b1.png" alt="Фото работы" />
+                        </picture>
+                      </div>
+                      <span class="course-cases-slider__position">Iнна Мірошнік</span>
+                      <span class="course-cases-slider__name">UX кейс для Uklon.ua</span>
+                    </div>
+                    <div class="course-cases-slider__case-card gallery-cell">
+                      <div class="course-cases-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="case-gallery">
+                          <img class="course-cases-slider__play-btn" src="./icons/gallery.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-f2d49ec1-8336-41e4-9ca8-6cb39f2589e7.png" />
+                          <img class="course-cases-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-f2d49ec1-8336-41e4-9ca8-6cb39f2589e7.png" alt="Фото работы" />
+                        </picture>
+                      </div>
+                      <span class="course-cases-slider__position">Саша Мірошнік</span>
+                      <span class="course-cases-slider__name">UX кейс для LUN.ua</span>
+                    </div>
+                    <div class="course-cases-slider__case-card gallery-cell">
+                      <div class="course-cases-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="case-gallery">
+                          <img class="course-cases-slider__play-btn" src="./icons/gallery.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-dcf1d32f-ae3c-4df7-b6bd-1ce4b08a19e9.png" />
+                          <img class="course-cases-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-dcf1d32f-ae3c-4df7-b6bd-1ce4b08a19e9.png" alt="Фото работы" />
+                        </picture>
+                      </div>
+                      <span class="course-cases-slider__position">Iнна Мірошнік</span>
+                      <span class="course-cases-slider__name">UX кейс для Uklon.ua</span>
+                    </div>
+                    <div class="course-cases-slider__case-card gallery-cell">
+                      <div class="course-cases-slider__image-section">
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-1d5f30a0-e3ec-41df-b25d-1cfc84f089ed.png" />
+                          <img class="course-cases-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-1d5f30a0-e3ec-41df-b25d-1cfc84f089ed.png" alt="Фото работы" />
+                        </picture>
+                      </div>
+                      <span class="course-cases-slider__position">Iнна Мірошнік</span>
+                      <span class="course-cases-slider__name">UX кейс для Uklon.ua</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end course-cases-slider -->
+              <div class="course-match scroll-section" id="for-whom">
+                <h3 class="course-title">Кому підходить курс?</h3>
+                <div class="course-match__program">
+                  <div class="text text_large course-match__program__desc">
+                    <img src="./img/course-1.svg" />
+                  </div>
+                  <div class="course-match__program__list">
+                    <div>
+                      <div class="course-match__program-module">
+                        <div class="course-match__program-module__items">
+                          <div class="course-match__program-module__item">
+                            <h4 class="course-match__title-reg course-match__title-reg_big course-program__program-module__item-title"> Ще не дизайнерам </h4>
+                            <div class="course-match__text course-match__text_reg program-module__item-desc">
+                              <p> Знакомство с Figma. Базовый набор инструментов и основные принципы работы с инструментом. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-match__program-module">
+                        <div class="course-match__program-module__items">
+                          <div class="course-match__program-module__item">
+                            <h4 class="course-match__title-reg course-match__title-reg_big course-match__program-module__item-title"> Дизайнерам-початківцям </h4>
+                            <div class="course-match__text course-match__text_reg program-module__item-desc">
+                              <p> Базовые понятия про стандартные сетки и принципы работы с ними. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-match__bottom">
+                      <button class="course-match__consult-btn js-open-popup-button" data-popup="consult"> Проконсультуйте мене </button>
+                    </div>
+                  </div>
+                  <div class="course-match__program__requirements">
+                    <div class="course-match__program__req-item">
+                      <h3>Досвід</h3>
+                      <div class="course-match__program__req-decs">
+                        <p>3+ років в маркетингу / комунікаціях</p>
+                      </div>
+                    </div>
+                    <div class="course-match__program__req-item">
+                      <h3>English</h3>
+                      <div class="course-match__program__req-decs">
+                        <p>На рівні, який дозволяє читати довгі і писати короткі тексти</p>
+                      </div>
+                    </div>
+                    <div class="course-match__program__req-item">
+                      <h3>Час</h3>
+                      <div class="course-match__program__req-decs">
+                        <p>Ви маєте приділяти домашнім завданням 10-12 годин на тиждень</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-match-second-second scroll-section" id="for-whom">
+                <h3 class="course-title">Кому підходить курс?</h3>
+                <div class="course-match-second__program">
+                  <div class="text text_large course-match-second__program__desc">
+                    <img src="./img/course-1.svg" />
+                  </div>
+                  <div class="course-match-second__program__list">
+                    <div>
+                      <div class="course-match-second__program-module">
+                        <div class="course-match-second__program-module__items">
+                          <div class="course-match-second__program-module__item">
+                            <h4 class="course-match-second__title-reg course-match-second__title-reg_big course-program__program-module__item-title"> Ще не дизайнерам </h4>
+                            <div class="course-match-second__text course-match-second__text_reg program-module__item-desc">
+                              <p> Знакомство с Figma. Базовый набор инструментов и основные принципы работы с инструментом. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-match-second__program-module">
+                        <div class="course-match-second__program-module__items">
+                          <div class="course-match-second__program-module__item">
+                            <h4 class="course-match-second__title-reg course-match-second__title-reg_big course-match-second__program-module__item-title"> Дизайнерам-початківцям </h4>
+                            <div class="course-match-second__text course-match-second__text_reg program-module__item-desc">
+                              <p> Базовые понятия про стандартные сетки и принципы работы с ними. </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-match-second__bottom">
+                      <button class="course-match-second__consult-btn js-open-popup-button" data-popup="consult"> Проконсультуйте мене </button>
+                    </div>
+                  </div>
+                  <div class="course-match-second__program__description">
+                    <div>
+                      <img src="https://d3n32ilufxuvd1.cloudfront.net/52610615b263af5f64000ad9/5fd7dd8e02a2e300cec9c278/upload-ecde4a38-a0a8-400c-a5da-07b26bbe1610.png" alt="" />
+                      <span> На проробку домашніх завдань ви маєте виділити 10–12 годин на тиждень. Багато? Багато. А користі ще більше.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-library-promo">
+                <img src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-36d5664c-0531-4e24-a868-7cbffc10c431.png?e=webp&amp;nll=true" alt="" />
+              </div>
+              <div class="course-how-is-learning scroll-section" id="about-training">
+                <h3 class="course-title">Як відбувається навчання?</h3>
+                <div class="course-how-is-learning__program">
+                  <div class="text text_large course-how-is-learning__program__desc">
+                    <img src="./img/course-4.svg" />
+                  </div>
+                  <div class="course-how-is-learning__program__list">
+                    <div class="course-how-is-learning__program-module">
+                      <div class="course-how-is-learning__program-module__item">
+                        <h4 class="course-how-is-learning__title-reg course-how-is-learning__title-reg_big course-how-is-learning__program-module__item-title"> Уроки і вебінари </h4>
+                        <div class="course-how-is-learning__text course-how-is-learning__text_reg program-module__item-desc">
+                          <p> По понеділкам і четвергам ви отримуватимете доступ до нових уроків, а по суботам 12:00–14:00 відбуватимуться живі вебінари з куратором чи гостями курсу. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-how-is-learning__program-module">
+                      <div class="course-how-is-learning__program-module__item">
+                        <h4 class="course-how-is-learning__title-reg course-how-is-learning__title-reg_big course-how-is-learning__program-module__item-title"> Багато домашніх завдань </h4>
+                        <div class="course-how-is-learning__text course-how-is-learning__text_reg program-module__item-desc">
+                          <p> У Проджекторі дії Practicult (культ практики). Тому ви будете робити дуже багато дуже складних домашок. Have fun & Survive. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-how-is-learning__program-module">
+                      <div class="course-how-is-learning__program-module__item">
+                        <h4 class="course-how-is-learning__title-reg course-how-is-learning__title-reg_big course-how-is-learning__program-module__item-title"> Курсовий проект </h4>
+                        <div class="course-how-is-learning__text course-how-is-learning__text_reg program-module__item-desc">
+                          <p> Під час курсу ви зробите великий курсовий проект для реального замовника. Бо принцип курсу — все як в житті. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-how-is-learning__program-module">
+                      <div class="course-how-is-learning__program-module__item">
+                        <h4 class="course-how-is-learning__title-reg course-how-is-learning__title-reg_big course-how-is-learning__program-module__item-title"> Unlimited фідбек </h4>
+                        <div class="course-how-is-learning__text course-how-is-learning__text_reg program-module__item-desc">
+                          <p> В Проджекторі нема лайт та преміум режимів. Єдиний режим — преміум. Отримайте від куратора все. Десята ітерація — це нормально. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-how-is-learning__program-module">
+                      <div class="course-how-is-learning__program-module__item">
+                        <h4 class="course-how-is-learning__title-reg course-how-is-learning__title-reg_big course-how-is-learning__program-module__item-title"> Сертифікат за справи </h4>
+                        <div class="course-how-is-learning__text course-how-is-learning__text_reg program-module__item-desc">
+                          <p> Сертифікат видаємо лише тим, хто своїм потом, часом і силами його заслижв. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-how-is-learning__program__requirements">
+                    <h4>ГРАФІК</h4>
+                    <div class="course-how-is-learning__program__req-item">
+                      <h3>Подача заявок</h3>
+                      <div class="course-how-is-learning__program__req-decs">
+                        <p>до 10 січня</p>
+                      </div>
+                    </div>
+                    <div class="course-how-is-learning__program__req-item">
+                      <h3>Старт занять</h3>
+                      <div class="course-how-is-learning__program__req-decs">
+                        <p>21 січня</p>
+                      </div>
+                    </div>
+                    <div class="course-how-is-learning__program__req-item">
+                      <h3>Випуск</h3>
+                      <div class="course-how-is-learning__program__req-decs">
+                        <p>28 березня</p>
+                      </div>
+                    </div>
+                    <div class="course-how-is-learning__program__req-item">
+                      <h3>Уроки</h3>
+                      <div class="course-how-is-learning__program__req-decs">
+                        <p>Вівторки і четверги</p>
+                      </div>
+                    </div>
+                    <div class="course-how-is-learning__program__req-item">
+                      <h3>Живі вебінари</h3>
+                      <div class="course-how-is-learning__program__req-decs">
+                        <p>Суботи 10:00—13:00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-partners scroll-section" id="partners">
+                <h3 class="course-title">Партнери курсу</h3>
+                <div class="course-partners__program">
+                  <div class="course-partners__program__desc">
+                    <p> Это практичный онлайн-курс об основах веб-дизайна для новичков, которые еще не имеют опыта япрофессии. </p>
+                  </div>
+                  <div class="course-partners__program__list">
+                    <div class="course-partners__program-module">
+                      <div class="course-partners__program-module__item">
+                        <img src="./img/companies/grammarly.svg" alt="" />
+                        <div class="course-partners__text course-partners__text_reg program-module__item-desc">
+                          <p> Grammarly виділяє стипендію на оплату 20% вартості навчання 3 найкращим студентам курсу </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-partners__program-module">
+                      <div class="course-partners__program-module__item">
+                        <img src="./img/companies/macpaw.png" alt="" />
+                        <div class="course-partners__text course-partners__text_reg program-module__item-desc">
+                          <p>Гарантує працевлаштування одного студента з курсу</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-partners__program-module">
+                      <div class="course-partners__program-module__item">
+                        <img src="./img/companies/datacamp.png" alt="" />
+                        <div class="course-partners__text course-partners__text_reg program-module__item-desc">
+                          <p> Дає доступ до використання свого програмного забезпечення студентам курсу </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- begin feedback-slider -->
+              <div class="feedback-slider scroll-section" id="reviews">
+                <div class="feedback-slider__heading">
+                  <h3 class="course-title">Відгуки</h3>
+                </div>
+                <div class="feedback-slider__slider">
+                  <div class="feedback-slider__inner gallery js-carousely" data-carousely='{ "cellAlign": "left" }'>
+                    <div class="feedback-slider__student-card gallery-cell">
+                      <div class="feedback-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="feedback-video">
+                          <img class="feedback-slider__play-btn" src="./icons/play-btn.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="" />
+                          <img class="feedback-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-cd78d3c5-7f5e-4024-bcf4-8e3cf705fc50.png" alt="Фото лектора" />
+                        </picture>
+                      </div>
+                      <span class="feedback-slider__name">Ольга Шевченко</span>
+                      <span class="feedback-slider__position">Ольга Шевченко</span>
+                      <div class="feedback">
+                        <div class="feedback-slider__socials">
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/facebook-circle.svg" alt="" />
+                          </a>
+                          <a href="https://www.behance.com/" target="_blank">
+                            <img src="./icons/behance.svg" alt="" />
+                          </a>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/linkedin.svg" alt="" />
+                          </a>
+                        </div>
+                        <p class="feedback-slider__student-feedback">Курс змінив і продовжує змінювати моє життя. Мені взагалі здається, що він буде корисний всім без винятку, не лише дизайнерам. Крім роботи і навчання, змінилися мій побут, дозвілля, світогляд, коло друзів — і це не бугагашки про «в мене більше нема друзів і я постаріла на 15 років за 5 місяців». Це все змінилось в кращий бік — все тепер має цінність, вагу, структуру. Жити стало важче, але набагато крутіше!)))</p>
+                      </div>
+                    </div>
+                    <div class="feedback-slider__student-card gallery-cell">
+                      <div class="feedback-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="feedback-video">
+                          <img class="feedback-slider__play-btn" src="./icons/play-btn.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="" />
+                          <img class="feedback-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-cd78d3c5-7f5e-4024-bcf4-8e3cf705fc50.png" alt="Фото лектора" />
+                        </picture>
+                      </div>
+                      <span class="feedback-slider__name">Маша Шевченко</span>
+                      <span class="feedback-slider__position">Маша Шевченко</span>
+                      <div class="feedback">
+                        <div class="feedback-slider__socials">
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/facebook-circle.svg" alt="" />
+                          </a>
+                          <a href="https://www.behance.com/" target="_blank">
+                            <img src="./icons/behance.svg" alt="" />
+                          </a>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/linkedin.svg" alt="" />
+                          </a>
+                        </div>
+                        <p class="feedback-slider__student-feedback">Курс змінив і продовжує змінювати моє життя. Мені взагалі здається, що він буде корисний всім без винятку, не лише дизайнерам. Крім роботи і навчання, змінилися мій побут, дозвілля, світогляд, коло друзів — і це не бугагашки про «в мене більше нема друзів і я постаріла на 15 років за 5 місяців». Це все змінилось в кращий бік — все тепер має цінність, вагу, структуру. Жити стало важче, але набагато крутіше!)))</p>
+                      </div>
+                    </div>
+                    <div class="feedback-slider__student-card gallery-cell">
+                      <div class="feedback-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="feedback-video">
+                          <img class="feedback-slider__play-btn" src="./icons/play-btn.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="" />
+                          <img class="feedback-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-cd78d3c5-7f5e-4024-bcf4-8e3cf705fc50.png" alt="Фото лектора" />
+                        </picture>
+                      </div>
+                      <span class="feedback-slider__name">Ольга Шевченко</span>
+                      <span class="feedback-slider__position">Ольга Шевченко</span>
+                      <div class="feedback">
+                        <div class="feedback-slider__socials">
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/facebook-circle.svg" alt="" />
+                          </a>
+                          <a href="https://www.behance.com/" target="_blank">
+                            <img src="./icons/behance.svg" alt="" />
+                          </a>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/linkedin.svg" alt="" />
+                          </a>
+                        </div>
+                        <p class="feedback-slider__student-feedback">Курс змінив і продовжує змінювати моє життя. Мені взагалі здається, що він буде корисний всім без винятку, не лише дизайнерам. Крім роботи і навчання, змінилися мій побут, дозвілля, світогляд, коло друзів — і це не бугагашки про «в мене більше нема друзів і я постаріла на 15 років за 5 місяців». Це все змінилось в кращий бік — все тепер має цінність, вагу, структуру. Жити стало важче, але набагато крутіше!)))</p>
+                      </div>
+                    </div>
+                    <div class="feedback-slider__student-card gallery-cell">
+                      <div class="feedback-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="feedback-video">
+                          <img class="feedback-slider__play-btn" src="./icons/play-btn.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="" />
+                          <img class="feedback-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-cd78d3c5-7f5e-4024-bcf4-8e3cf705fc50.png" alt="Фото лектора" />
+                        </picture>
+                      </div>
+                      <span class="feedback-slider__name">Ольга Шевченко</span>
+                      <span class="feedback-slider__position">Ольга Шевченко</span>
+                      <div class="feedback">
+                        <div class="feedback-slider__socials">
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/facebook-circle.svg" alt="" />
+                          </a>
+                          <a href="https://www.behance.com/" target="_blank">
+                            <img src="./icons/behance.svg" alt="" />
+                          </a>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/linkedin.svg" alt="" />
+                          </a>
+                        </div>
+                        <p class="feedback-slider__student-feedback">Курс змінив і продовжує змінювати моє життя. Мені взагалі здається, що він буде корисний всім без винятку, не лише дизайнерам. Крім роботи і навчання, змінилися мій побут, дозвілля, світогляд, коло друзів — і це не бугагашки про «в мене більше нема друзів і я постаріла на 15 років за 5 місяців». Це все змінилось в кращий бік — все тепер має цінність, вагу, структуру. Жити стало важче, але набагато крутіше!)))</p>
+                      </div>
+                    </div>
+                    <div class="feedback-slider__student-card gallery-cell">
+                      <div class="feedback-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="feedback-video">
+                          <img class="feedback-slider__play-btn" src="./icons/play-btn.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="" />
+                          <img class="feedback-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-cd78d3c5-7f5e-4024-bcf4-8e3cf705fc50.png" alt="Фото лектора" />
+                        </picture>
+                      </div>
+                      <span class="feedback-slider__name">Ольга Шевченко</span>
+                      <span class="feedback-slider__position">Ольга Шевченко</span>
+                      <div class="feedback">
+                        <div class="feedback-slider__socials">
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/facebook-circle.svg" alt="" />
+                          </a>
+                          <a href="https://www.behance.com/" target="_blank">
+                            <img src="./icons/behance.svg" alt="" />
+                          </a>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/linkedin.svg" alt="" />
+                          </a>
+                        </div>
+                        <p class="feedback-slider__student-feedback">Курс змінив і продовжує змінювати моє життя. Мені взагалі здається, що він буде корисний всім без винятку, не лише дизайнерам. Крім роботи і навчання, змінилися мій побут, дозвілля, світогляд, коло друзів — і це не бугагашки про «в мене більше нема друзів і я постаріла на 15 років за 5 місяців». Це все змінилось в кращий бік — все тепер має цінність, вагу, структуру. Жити стало важче, але набагато крутіше!)))</p>
+                      </div>
+                    </div>
+                    <div class="feedback-slider__student-card gallery-cell">
+                      <div class="feedback-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="feedback-video">
+                          <img class="feedback-slider__play-btn" src="./icons/play-btn.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="" />
+                          <img class="feedback-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-cd78d3c5-7f5e-4024-bcf4-8e3cf705fc50.png" alt="Фото лектора" />
+                        </picture>
+                      </div>
+                      <span class="feedback-slider__name">Ольга Шевченко</span>
+                      <span class="feedback-slider__position">Ольга Шевченко</span>
+                      <div class="feedback">
+                        <div class="feedback-slider__socials">
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/facebook-circle.svg" alt="" />
+                          </a>
+                          <a href="https://www.behance.com/" target="_blank">
+                            <img src="./icons/behance.svg" alt="" />
+                          </a>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/linkedin.svg" alt="" />
+                          </a>
+                        </div>
+                        <p class="feedback-slider__student-feedback">Курс змінив і продовжує змінювати моє життя. Мені взагалі здається, що він буде корисний всім без винятку, не лише дизайнерам. Крім роботи і навчання, змінилися мій побут, дозвілля, світогляд, коло друзів — і це не бугагашки про «в мене більше нема друзів і я постаріла на 15 років за 5 місяців». Це все змінилось в кращий бік — все тепер має цінність, вагу, структуру. Жити стало важче, але набагато крутіше!)))</p>
+                      </div>
+                    </div>
+                    <div class="feedback-slider__student-card gallery-cell">
+                      <div class="feedback-slider__image-section">
+                        <button class="js-open-popup-button" data-popup="feedback-video">
+                          <img class="feedback-slider__play-btn" src="./icons/play-btn.svg" alt="" />
+                        </button>
+                        <picture>
+                          <source media="(min-width: 1024px)" srcset="" />
+                          <img class="feedback-slider__photo" src="https://d2kq0urxkarztv.cloudfront.net/52610615b263af5f64000ad9/2439930/upload-cd78d3c5-7f5e-4024-bcf4-8e3cf705fc50.png" alt="Фото лектора" />
+                        </picture>
+                      </div>
+                      <span class="feedback-slider__name">Ольга Шевченко</span>
+                      <span class="feedback-slider__position">Ольга Шевченко</span>
+                      <div class="feedback">
+                        <div class="feedback-slider__socials">
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/facebook-circle.svg" alt="" />
+                          </a>
+                          <a href="https://www.behance.com/" target="_blank">
+                            <img src="./icons/behance.svg" alt="" />
+                          </a>
+                          <a href="https://www.facebook.com/" target="_blank">
+                            <img src="./icons/linkedin.svg" alt="" />
+                          </a>
+                        </div>
+                        <p class="feedback-slider__student-feedback">Курс змінив і продовжує змінювати моє життя. Мені взагалі здається, що він буде корисний всім без винятку, не лише дизайнерам. Крім роботи і навчання, змінилися мій побут, дозвілля, світогляд, коло друзів — і це не бугагашки про «в мене більше нема друзів і я постаріла на 15 років за 5 місяців». Це все змінилось в кращий бік — все тепер має цінність, вагу, структуру. Жити стало важче, але набагато крутіше!)))</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end feedback-slider -->
+              <div class="course-networking scroll-section" id="networking">
+                <h3 class="course-title">Нетворк випускників</h3>
+                <div class="course-networking__cols course-networking__cols_4 course-networking__cols_divided course-networking__cols_centered course-networking__cols_sm-2 js-cols">
+                  <div class="course-networking__cols__col">
+                    <div class="course-networking__partner partner_logo-only">
+                      <div class="course-networking__partner__logo">
+                        <img src="./img/companies/macpaw_1.svg" />
+                        <img src="./img/companies/macpaw_2.svg" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-networking__cols__col">
+                    <div class="course-networking__partner partner_logo-only">
+                      <div class="course-networking__partner__logo">
+                        <img src="./img/companies/lun.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-networking__cols__col">
+                    <div class="course-networking__partner partner_logo-only">
+                      <div class="course-networking__partner__logo">
+                        <img src="./img/companies/wix.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-networking__cols__col">
+                    <div class="course-networking__partner partner_logo-only">
+                      <div class="course-networking__partner__logo">
+                        <img src="./img/companies/petcube.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-networking__cols__col">
+                    <div class="course-networking__partner partner_logo-only">
+                      <div class="course-networking__partner__logo">
+                        <img src="./img/companies/template-monster.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-networking__cols__col">
+                    <div class="course-networking__partner partner_logo-only">
+                      <div class="course-networking__partner__logo">
+                        <img src="./img/companies/ring.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-networking__cols__col">
+                    <div class="course-networking__partner partner_logo-only">
+                      <div class="course-networking__partner__logo">
+                        <img src="./img/companies/zeo.svg" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-networking__cols__col">
+                    <div class="course-networking__partner partner_logo-only">
+                      <div class="course-networking__partner__logo">
+                        <img src="./img/companies/grammarly.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="course-questions scroll-section" id="questions">
+                <h3 class="course-title"> Питання і відповіді</h3>
+                <div class="course-questions__program">
+                  <div class="text text_large course-questions__program__desc">
+                    <img src="./img/course-2.svg" alt="" />
+                  </div>
+                  <div class="course-questions__program__list">
+                    <div class="course-questions__js-toogle course-questions__program-module">
+                      <div class="course-questions__program-module__item">
+                        <h4 class="course-questions__title-reg course-questions__title-reg_big course-questions__program-module__item-title"> Я не умею работать в Figma, мне подойдет этот курс? </h4>
+                        <div class="course-questions__text course-questions__text_reg program-module__item-desc">
+                          <p> По понеділкам і четвергам ви отримуватимете доступ до нових уроків, а по суботам 12:00–14:00 відбуватимуться живі вебінари з куратором чи гостями курсу. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-questions__js-toogle  course-questions__program-module">
+                      <div class="course-questions__program-module__item">
+                        <h4 class="course-questions__title-reg course-questions__title-reg_big course-questions__program-module__item-title"> Будут ли мне доступны видеоуроки по окончанию курса? </h4>
+                        <div class="course-questions__text course-questions__text_reg program-module__item-desc">
+                          <p> По понеділкам і четвергам ви отримуватимете доступ до нових уроків, а по суботам 12:00–14:00 відбуватимуться живі вебінари з куратором чи гостями курсу. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="course-questions__js-toogle course-questions__program-module">
+                      <div class="course-questions__program-module__item">
+                        <h4 class="course-questions__title-reg course-questions__title-reg_big course-questions__program-module__item-title"> А сертификат будет? </h4>
+                        <div class="course-questions__text course-questions__text_reg program-module__item-desc">
+                          <p> По понеділкам і четвергам ви отримуватимете доступ до нових уроків, а по суботам 12:00–14:00 відбуватимуться живі вебінари з куратором чи гостями курсу. </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                $(".course-questions__js-toogle").click(function()
+                {
+                  $(this).toggleClass("course-questions__js-toogle-on");
+                });
+
+              </script>
+              <!-- course-case-video-popup -->
+              <div class="course-case-video-popup js-popup" data-name="case-video" id="myModal">
+                <div class="login-popup course-case-video-popup__inner">
+                  <button class="course-case-video-popup__close js-popup-close">
+                    <svg class="icon icon-close-popup">
+                      <use xlink:href="img/sprite.svg#icon-close-popup"></use>
+                    </svg>
+                  </button>
+                  <script>
+                    $(document).ready(function()
+                    {
+                      var url = $("#caseVideo").attr("src");
+                      $(".course-case-video-popup__close").click(function()
+                      {
+                        $("#caseVideo").attr("src", "");
+                      });
+                      $(".course-cases-slider__play-btn").click(function()
+                      {
+                        $("#caseVideo").attr("src", url);
+                      });
+                    });
+
+                  </script>
+                  <div class="course-case-video-popup__main">
+                    <div class="course-case-video-popup__video">
+                      <iframe id="caseVideo" src="https://www.youtube.com/embed/rY-LV4lD97U?version=3&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=0&amp;mute=0&amp;listType=playlist" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- course-case-gallery-popup -->
+              <div class="course-case-gallery-popup js-popup" data-name="case-gallery">
+                <div class="login-popup course-case-gallery-popup__inner">
+                  <button class="course-case-gallery-popup__close js-popup-close">
+                    <svg class="icon icon-close-popup">
+                      <use xlink:href="img/sprite.svg#icon-close-popup"></use>
+                    </svg>
+                  </button>
+                  <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet" />
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+                  <div class="course-case-gallery-popup__main">
+                    <div class="fotorama" data-maxwidth="100%" data-allowfullscreen="true" data-nav="thumbs">
+                      <img src="https://s.fotorama.io/1.jpg" />
+                      <img src="https://s.fotorama.io/2.jpg" />
+                      <img src="https://s.fotorama.io/3.jpg" />
+                      <img src="https://s.fotorama.io/4.jpg" />
+                      <img src="https://s.fotorama.io/5.jpg" />
+                      <img src="https://s.fotorama.io/1.jpg" />
+                      <img src="https://s.fotorama.io/2.jpg" />
+                      <img src="https://s.fotorama.io/3.jpg" />
+                      <img src="https://s.fotorama.io/4.jpg" />
+                      <img src="https://s.fotorama.io/5.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- course-feedback-popup -->
+              <div class="course-feedback-popup js-popup" data-name="feedback-video">
+                <div class="login-popup course-feedback-popup__inner">
+                  <button class="course-feedback-popup__close js-popup-close">
+                    <svg class="icon icon-close-popup">
+                      <use xlink:href="img/sprite.svg#icon-close-popup"></use>
+                    </svg>
+                  </button>
+                  <script>
+                    $(document).ready(function()
+                    {
+                      var url = $("#feedbackVideo").attr("src");
+                      $(".course-feedback-popup__close").click(function()
+                      {
+                        $("#feedbackVideo").attr("src", "");
+                      });
+                      $(".feedback-slider__play-btn").click(function()
+                      {
+                        $("#feedbackVideo").attr("src", url);
+                      });
+                    });
+
+                  </script>
+                  <div class="course-feedback-popup__main">
+                    <div class="course-feedback-popup__video">
+                      <iframe id="feedbackVideo" src="https://www.youtube.com/embed/DG3iQzSUYLk?version=3&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=0&amp;mute=0&amp;listType=playlist" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- course-feedback-popup -->
+            </main>
+          </div>
+        </div>
+        <!-- _course-questions -->
+        <section class="course-registration" id="registration">
+          <div class="container container_padding-max container_padding-small">
+            <main class="course-registration__main main_video" id="content">
+              <h3 class="course-title">Реєстрація</h3>
+              <div class="course-registration__cols course-registration__cols_2 course-registration__cols_aside">
+                <div class="course-registration__cols__col">
+                  <div class="course-registration__form">
+                    <form action="">
+                      <div class="course-registration__form__row">
+                        <input type="text" placeholder="Ім'я" />
+                      </div>
+                      <div class="course-registration__form__row">
+                        <input type="text" placeholder="Прізвище" />
+                      </div>
+                      <div class="course-registration__form__row">
+                        <input type="email" placeholder="Email" />
+                      </div>
+                      <div class="course-registration__form__row">
+                        <input type="tel" placeholder="Номер телефону" />
+                      </div>
+                      <div class="course-registration__form__row_checkbox">
+                        <div class="course-registration__checkbox-group">
+                          <label class="course-registration__checkbox-group__checkbox">
+                            <input class="course-registration__checkbox" id="agree" type="checkbox" name="agree" value="1" />
+                          </label>
+                          <div class="course-registration__checkbox-group__text"> Я погоджуюсь з <a target="_blank" href="https://prjctr.online/page/terms-ukr.html">правилами</a> обробки даних </div>
+                        </div>
+                      </div>
+                      <div class="course-registration__form__row course-registration__form_last">
+                        <button type="submit" class="course-registration__btn course-registration__btn_big course-registration__btn_fullwidth"> Зареєструватись </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="course-registration__cols__col">
+                  <div class="course-registration__aside-item">
+                    <div class="course-registration__consult-section">
+                      <img src="./img/nazar.png" class="course-registration__nazar" />
+                      <div class="text text_reg course-registration__aside-item__desc">
+                        <p> Ще маєте питання? <br /> Не соромтесь їх задати. </p>
+                      </div>
+                    </div>
+                    <button class="course-registration__consult js-open-popup-button" data-popup="consult"> Проконсультуйте мене </button>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </section>
+        <!-- begin intro -->
+        <div class="container container_padding-max container_padding-small">
+          <section class="course-similar">
+            <h3 class="course-title"> Інші курси для вас </h3>
+            <div class="course-similar__section">
+              <div class="course-similar__others">
+                <div class="course-similar__item">
+                  <span class="course-similar__title">UX Pro</span>
+                  <div class="course-similar__bottom">
+                    <span class="course-similar__desc">3 місяця, старт — 17/01</span>
+                    <span class="course-similar__price">5 000 грн / міс</span>
+                  </div>
+                </div>
+                <div class="course-similar__item">
+                  <span class="course-similar__title">Product Interface Design</span>
+                  <div class="course-similar__bottom">
+                    <span class="course-similar__desc">3 місяця, старт — 17/01</span>
+                    <span class="course-similar__price">5 000 грн / міс</span>
+                  </div>
+                </div>
+                <div class="course-similar__item">
+                  <span class="course-similar__title">UX Data Mining & Analitycs</span>
+                  <div class="course-similar__bottom">
+                    <span class="course-similar__desc">3 місяця, старт — 17/01</span>
+                    <span class="course-similar__price">5 000 грн / міс</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- end intro -->
+        <!-- course-consult-popup -->
+        <div class="course-consult-popup js-popup" data-name="consult">
+          <div class="login-popup course-consult-popup__inner">
+            <button class="course-consult-popup__close js-popup-close">
+              <svg class="icon icon-close-popup">
+                <use xlink:href="img/sprite.svg#icon-close-popup"></use>
+              </svg>
+            </button>
+            <p class="course-consult-popup__text">Проконсультуйте мене</p>
+            <div class="course-consult-popup__main" style="display: none;">
+              <div class="course-consult-popup__form">
+                <form action="">
+                  <div class="course-consult-popup__row">
+                    <input type="text" placeholder="Ім'я" />
+                  </div>
+                  <div class="course-consult-popup__row">
+                    <input type="tel" placeholder="Номер телефону" />
+                  </div>
+                  <div class="course-consult-popup__row">
+                    <input type="email" placeholder="Коли вам зручно говорити?" />
+                  </div>
+                  <div class="course-consult-popup__row course-consult-popup__form_last">
+                    <button type="submit" class="course-consult-popup__button course-consult-popup__btn_big course-consult-popup__btn_fullwidth"> Замовити консультацію </button>
+                  </div>
+                </form>
+              </div>
+              <div class="course-consult-popup__desc">
+                <div class="course-consult-popup__aside-item">
+                  <div class="course-consult-popup__consult-section">
+                    <img src="./img/nazar.png" class="course-consult-popup__nazar" />
+                    <div class="text text_reg course-consult-popup__aside-item__desc">
+                      <p> Маєте питання? Не <br /> соромтесь їх задати. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course-consult-popup__done-section">
+              <div class="course-consult-popup__consult-section">
+                <img src="./img/nazar.png" class="course-consult-popup__nazar" />
+                <div class="text text_reg course-consult-popup__done-desc" style="
+        margin-left: 30px;
+    ">
+                  <p> Дякуємо, що звернулись! </p>
+                  <br />
+                  <p> Менеджер школи зв'яжеться з вами протягом трьох днів і допоможе в усьому розібратись. На зв'язку :-) </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- course-case-video-popup -->
+        <div class="course-case-video-popup js-popup" data-name="case-video" id="myModal">
+          <div class="login-popup course-case-video-popup__inner">
+            <button class="course-case-video-popup__close js-popup-close">
+              <svg class="icon icon-close-popup">
+                <use xlink:href="img/sprite.svg#icon-close-popup"></use>
+              </svg>
+            </button>
+            <script>
+              $(document).ready(function()
+              {
+                var url = $("#caseVideo").attr("src");
+                $(".course-case-video-popup__close").click(function()
+                {
+                  $("#caseVideo").attr("src", "");
+                });
+                $(".course-cases-slider__play-btn").click(function()
+                {
+                  $("#caseVideo").attr("src", url);
+                });
+              });
+
+            </script>
+            <div class="course-case-video-popup__main">
+              <div class="course-case-video-popup__video">
+                <iframe id="caseVideo" src="https://www.youtube.com/embed/rY-LV4lD97U?version=3&amp;rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=0&amp;mute=0&amp;listType=playlist" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      <!--  -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>

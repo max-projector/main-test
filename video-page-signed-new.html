@@ -1,0 +1,977 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Video page - Signed</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+  </head>
+  <body>
+    <div class="overlay js-overlay"></div>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="skip-content" id="skip">
+          <a class="skip-content__link" href="#content" tabindex="1">Skip to Main Content (Press Enter)</a>
+        </div>
+        <div class="header__container container container_wider">
+          <a href="#" class="header__logo logo">
+            <img class="logo__image" src="./img/logo.svg" alt="Логотип Projector" />
+          </a>
+          <button class="header__burger js-burger" type="button" aria-label="Открыть меню">
+            <svg class="icon icon-burger">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="header__close js-close" type="button" aria-label="Закрыть меню">
+            <svg class="icon icon-close-menu">
+              <use xlink:href="img/sprite.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="header__inner js-menu-inner">
+            <button class="header__login header__login_mob js-open-popup-button" type="button" data-popup="login">
+              <svg class="icon icon-user">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+              <span class="js-login">Костянтин Костянтинопільський</span>
+            </button>
+            <nav class="header__menu menu js-menu">
+              <ul class="menu__list">
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Освіта <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/study-image.jpg" alt="Освіта" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Онлайн-курси</span>
+                          <span class="menu__subpoint-subtext">для розвитку в професії</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Гуманітаріум</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Курси для школярів</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Події <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/events-image.jpg" alt="Події" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Whatabout</span>
+                          <span class="menu__subpoint-subtext">global creative community</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Kruрa</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">OFFF Kyiv</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Воркшопи і лекції</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  is-active js-menu-point ">
+                  <a class="menu__link" href="main-page-unlogged.html" tabindex="1">Бібліотека</a>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Медіа <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/events-image.jpg" alt="Медіа" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Telegraf</span>
+                          <span class="menu__subpoint-subtext">провідне українське дизайн-медіа</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Рrjctr Mag</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Youtube</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-facebook">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Новини, роботи, люди</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-telegram">
+                            <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Вакансії та анонси</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-instagram">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Візуальне життя школи </span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Ми <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/we-image.jpg" alt="Ми" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Про Рrojector</span>
+                          <span class="menu__subpoint-subtext">історія і головні ідеї школи</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Люди</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Співпраця</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Контакти</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__actions">
+              <div class="header__restream"> <span>powered by </span><img src="./icons/restream.svg" alt="" /></div>
+              <a class="header__phone" href="tel:0970159272" tabindex="1">097 015-92-72</a>
+              <form class="header__languages js-languages" action="#" method="get">
+                <button class="header__languages-button js-languages-button" type="button" aria-label="Выбор языка" tabindex="1">
+                  <span class="header__languages-text js-languages-text">UKR</span>
+                  <svg class="icon icon-arrow-down">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <ul class="header__languages-list js-languages-options">
+                  <li class="header__languages-item js-languages-item">RU</li>
+                  <li class="header__languages-item js-languages-item">ENG</li>
+                </ul>
+                <select class="header__languages-select js-languages-hidden" id="languages" name="languages" required>
+                  <option value="UKR">UKR</option>
+                  <option value="RU">RU</option>
+                  <option value="ENG">ENG</option>
+                </select>
+              </form>
+              <button class="header__login js-open-popup-button" type="button" data-popup="login" tabindex="1">
+                <svg class="icon icon-user">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <span>Костянтин Костянтинопільський</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="container container_padding-small">
+        <main class="main main_video" id="content">
+          <!-- begin pagination-top -->
+          <div class="pagination-top">
+            <a class="pagination-top__back-button back-button" href="main-page-unlogged.html">
+              <svg class="icon icon-arrow-left-white-custom">
+                <use xlink:href="img/sprite.svg#icon-arrow-left-white-custom"></use>
+              </svg>
+            </a>
+            <div class="pagination-top__like-button button button_smaller button_bold">
+              <button class="button__link" type="button">
+                <svg class="icon icon-heart">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg> В избранном </button>
+            </div>
+          </div>
+          <!-- end pagination-top -->
+          <!-- begin video-content-new -->
+          <section class="video-content-new">
+            <div class="video-content-new__data">
+              <a class="video-content-new__link link" href="#">Маркетинг</a>
+              <span>2 сентября 2019</span>
+            </div>
+            <h2 class="video-content-new__title title title_smaller title_smaller_mob"> Проектирование мобильных приложений </h2>
+            <p class="video-content-new__data video-content-new__data_margin">
+              <a class="link link_hover" href="#">Дмитрий Корнилов</a> — CEO и со-основатель <a class="link" href="#">FFFACE</a>
+            </p>
+            <div class="video-content-new__main-section">
+              <div class="video-content-new__left_wrapper">
+                <div class="video-content-new__video-block">
+                  <div class="video-content-new__cover js-video-cover">
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="./img/image@2x.jpg" />
+                      <source media="(min-width: 500px)" srcset="./img/image.jpg" />
+                      <source media="(min-width: 320px)" srcset="./img/image-mobile.jpg" />
+                      <img src="./img/image@2x.jpg" alt="Фото лектора" />
+                    </picture>
+                    <button class="video-content-new__play js-video-play-button" type="button">
+                      <svg class="icon icon-arrow-right">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="video-content-new__video js-video">
+                    <iframe class="video-content-new__iframe" src="https://player.vimeo.com/video/254988878" frameborder="0" allow="autoplay; fullscreen" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                  </div>
+                </div>
+                <div class="video-content-new__inner">
+                  <div class="video-content-new__main">
+                    <div class="video-content-new__tags tags">
+                      <ul class="tags__list">
+                        <li class="tags__item">
+                          <a class="tags__link" href="main-page-logged-in.html"> АНИМАЦИЯ </a>
+                        </li>
+                        <li class="tags__item">
+                          <a class="tags__link" href="main-page-logged-in.html"> РRINCIРLE </a>
+                        </li>
+                        <li class="tags__item">
+                          <a class="tags__link" href="main-page-logged-in.html"> МОУШН </a>
+                        </li>
+                        <li class="tags__item">
+                          <a class="tags__link" href="main-page-logged-in.html"> ПЕРСОНАЖИ </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="video-content-new__info-block">
+                      <!-- begin info-block -->
+                      <article class="info-block">
+                        <p><a href="#">Дмитрий Корнилов</a> — CEO и со-основатель <a href="#">FFFACE</a>, специалист по разработке продуктов с Дополненной Реальностью. Принимал участие в разработке проектов для Monobank, Silpo, 1+1 media, Київстар, Pepsi, Danone, Parimatch, группы «Казка», Владимира Дантеса и др.</p>
+                        <p>Вы: не знаете что такое Instagram-фильтры и зачем они нужны брендам, маркетологам и блоггерам. Также вы, после лекций от FFFACE: создал для себя и своих клиентов сет базовых фильтров с актуальным меметическим креативом и получил крутые метрики и хайп.</p>
+                        <p>На лекции Дима расскажет, как использовать соцсети, чтобы аудитория сама продвигала ваш бренд и даст вводные данные по Инстаграм- фильтрам для маркетинга. В ней подробно разобраны изменения в контент-маркетинге и основные тренды 2020 года, кейсы компании FFACE, методологии разработки креатива, и основные правила запуская активности с фильтрами.</p>
+                        <h6>Кому подойдёт?</h6>
+                        <p>Digital-маркетологам, SMM-специалистам, проджект менеджерам, а также креаторам, которые создают визуальный контент.</p>
+                      </article>
+                      <!-- end info-block -->
+                    </div>
+                    <a class="video-content-new__button button button_dark button_height" href="#" target="_blank">Открыть презентацию из видео</a>
+                  </div>
+                </div>
+                <ul class="video-content-new__socials socials">
+                  <li class="socials__share" aria-label="Поделиться видео">
+                    <svg class="icon icon-share">
+                      <use xlink:href="img/sprite.svg#icon-share"></use>
+                    </svg>
+                  </li>
+                  <li class="socials__item">
+                    <button class="socials__button" type="button" aria-label="Поделиться в Facebook">
+                      <svg class="icon icon-facebook-circle">
+                        <use xlink:href="img/sprite.svg#icon-facebook-circle"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="socials__item">
+                    <button class="socials__button" type="button" aria-label="Поделиться в Twitter">
+                      <svg class="icon icon-twitter">
+                        <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="socials__item">
+                    <button class="socials__button" type="button" aria-label="Скопировать ссылку">
+                      <svg class="icon icon-copy-link">
+                        <use xlink:href="img/sprite.svg#icon-copy-link"></use>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <section>
+                <ul>
+                  <li class="cards-block__item   cards-block__item_relative  ">
+                    <div class="card  card_relative   card_active ">
+                      <a class="card__link" href="/ddd" tabindex="1">
+                        <span class="card__favorite">
+                          <svg class="icon icon-heart">
+                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                          </svg>
+                        </span>
+                        <span class="card__favorite">
+                          <svg class="icon icon-heart-outline">
+                            <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                          </svg>
+                        </span>
+                        <div class="card__flex">
+                          <div class="card__image  card__image_relative ">
+                            <div class="card__progress-bar  is-active ">
+                              <div class="card__progress"></div>
+                            </div>
+                            <picture>
+                              <source media="(min-width: 1024px)" srcset="./img/big-card-1@2x.jpg" />
+                              <img class="card__photo" src="./img/big-card-1.jpg" alt="Фото лектора" />
+                            </picture>
+                            <div class="card__label ">
+                              <span class="card__label-text">Новое</span>
+                            </div>
+                            <div class="card__duration">
+                              <span class="card__duration-text"> 04:32</span>
+                            </div>
+                          </div>
+                          <p class="card__info">
+                            <span class="card__year">2020</span>
+                            <span class="card__category">Management</span>
+                          </p>
+                          <div>
+                            <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+                            <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+                          </div>
+                      </a>
+                      <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+                    </div>
+            </div>
+            </li>
+            <li class="cards-block__item   cards-block__item_relative  ">
+              <div class="card  card_relative  ">
+                <a class="card__link" href="/ddd" tabindex="1">
+                  <span class="card__favorite">
+                    <svg class="icon icon-heart">
+                      <use xlink:href="img/sprite.svg#icon-heart"></use>
+                    </svg>
+                  </span>
+                  <span class="card__favorite">
+                    <svg class="icon icon-heart-outline">
+                      <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                    </svg>
+                  </span>
+                  <div class="card__flex">
+                    <div class="card__image  card__image_relative ">
+                      <div class="card__progress-bar  is-active ">
+                        <div class="card__progress"></div>
+                      </div>
+                      <picture>
+                        <source media="(min-width: 1024px)" srcset="./img/big-card-2@2x.jpg" />
+                        <img class="card__photo" src="./img/big-card-2.jpg" alt="Фото лектора" />
+                      </picture>
+                      <div class="card__label ">
+                        <span class="card__label-text">Новое</span>
+                      </div>
+                      <div class="card__duration">
+                        <span class="card__duration-text"> 04:32</span>
+                      </div>
+                    </div>
+                    <p class="card__info">
+                      <span class="card__year">2020</span>
+                      <span class="card__category">Management</span>
+                    </p>
+                    <div>
+                      <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+                      <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+                    </div>
+                </a>
+                <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+              </div>
+      </div>
+      </li>
+      <li class="cards-block__item   cards-block__item_relative  ">
+        <div class="card  card_relative  ">
+          <a class="card__link" href="/ddd" tabindex="1">
+            <span class="card__favorite">
+              <svg class="icon icon-heart">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </span>
+            <span class="card__favorite">
+              <svg class="icon icon-heart-outline">
+                <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+              </svg>
+            </span>
+            <div class="card__flex">
+              <div class="card__image  card__image_relative ">
+                <div class="card__progress-bar  is-active ">
+                  <div class="card__progress"></div>
+                </div>
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="./img/big-card-1@2x.jpg" />
+                  <img class="card__photo" src="./img/big-card-1.jpg" alt="Фото лектора" />
+                </picture>
+                <div class="card__label ">
+                  <span class="card__label-text">Новое</span>
+                </div>
+                <div class="card__duration">
+                  <span class="card__duration-text"> 04:32</span>
+                </div>
+              </div>
+              <p class="card__info">
+                <span class="card__year">2020</span>
+                <span class="card__category">Management</span>
+              </p>
+              <div>
+                <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+                <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+              </div>
+          </a>
+          <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+        </div>
+    </div>
+    </li>
+    <li class="cards-block__item   cards-block__item_relative  ">
+      <div class="card  card_relative  ">
+        <a class="card__link" href="/ddd" tabindex="1">
+          <span class="card__favorite">
+            <svg class="icon icon-heart">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+          </span>
+          <span class="card__favorite">
+            <svg class="icon icon-heart-outline">
+              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+            </svg>
+          </span>
+          <div class="card__flex">
+            <div class="card__image  card__image_relative ">
+              <div class="card__progress-bar  is-active ">
+                <div class="card__progress"></div>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/big-card-2@2x.jpg" />
+                <img class="card__photo" src="./img/big-card-2.jpg" alt="Фото лектора" />
+              </picture>
+              <div class="card__label ">
+                <span class="card__label-text">Новое</span>
+              </div>
+              <div class="card__duration">
+                <span class="card__duration-text"> 04:32</span>
+              </div>
+            </div>
+            <p class="card__info">
+              <span class="card__year">2020</span>
+              <span class="card__category">Management</span>
+            </p>
+            <div>
+              <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+              <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+            </div>
+        </a>
+        <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+      </div>
+      </div>
+    </li>
+    <li class="cards-block__item   cards-block__item_relative  ">
+      <div class="card  card_relative  ">
+        <a class="card__link" href="/ddd" tabindex="1">
+          <span class="card__favorite">
+            <svg class="icon icon-heart">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+          </span>
+          <span class="card__favorite">
+            <svg class="icon icon-heart-outline">
+              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+            </svg>
+          </span>
+          <div class="card__flex">
+            <div class="card__image  card__image_relative ">
+              <div class="card__progress-bar  is-active ">
+                <div class="card__progress"></div>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/big-card-1@2x.jpg" />
+                <img class="card__photo" src="./img/big-card-1.jpg" alt="Фото лектора" />
+              </picture>
+              <div class="card__label ">
+                <span class="card__label-text">Новое</span>
+              </div>
+              <div class="card__duration">
+                <span class="card__duration-text"> 04:32</span>
+              </div>
+            </div>
+            <p class="card__info">
+              <span class="card__year">2020</span>
+              <span class="card__category">Management</span>
+            </p>
+            <div>
+              <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+              <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+            </div>
+        </a>
+        <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+      </div>
+      </div>
+    </li>
+    <li class="cards-block__item   cards-block__item_relative  ">
+      <div class="card  card_relative  ">
+        <a class="card__link" href="/ddd" tabindex="1">
+          <span class="card__favorite">
+            <svg class="icon icon-heart">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+          </span>
+          <span class="card__favorite">
+            <svg class="icon icon-heart-outline">
+              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+            </svg>
+          </span>
+          <div class="card__flex">
+            <div class="card__image  card__image_relative ">
+              <div class="card__progress-bar  is-active ">
+                <div class="card__progress"></div>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/big-card-2@2x.jpg" />
+                <img class="card__photo" src="./img/big-card-2.jpg" alt="Фото лектора" />
+              </picture>
+              <div class="card__label ">
+                <span class="card__label-text">Новое</span>
+              </div>
+              <div class="card__duration">
+                <span class="card__duration-text"> 04:32</span>
+              </div>
+            </div>
+            <p class="card__info">
+              <span class="card__year">2020</span>
+              <span class="card__category">Management</span>
+            </p>
+            <div>
+              <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+              <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+            </div>
+        </a>
+        <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+      </div>
+      </div>
+    </li>
+    <li class="cards-block__item   cards-block__item_relative  ">
+      <div class="card  card_relative  ">
+        <a class="card__link" href="/ddd" tabindex="1">
+          <span class="card__favorite">
+            <svg class="icon icon-heart">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+          </span>
+          <span class="card__favorite">
+            <svg class="icon icon-heart-outline">
+              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+            </svg>
+          </span>
+          <div class="card__flex">
+            <div class="card__image  card__image_relative ">
+              <div class="card__progress-bar  is-active ">
+                <div class="card__progress"></div>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/big-card-1@2x.jpg" />
+                <img class="card__photo" src="./img/big-card-1.jpg" alt="Фото лектора" />
+              </picture>
+              <div class="card__label ">
+                <span class="card__label-text">Новое</span>
+              </div>
+              <div class="card__duration">
+                <span class="card__duration-text"> 04:32</span>
+              </div>
+            </div>
+            <p class="card__info">
+              <span class="card__year">2020</span>
+              <span class="card__category">Management</span>
+            </p>
+            <div>
+              <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+              <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+            </div>
+        </a>
+        <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+      </div>
+      </div>
+    </li>
+    <li class="cards-block__item   cards-block__item_relative  ">
+      <div class="card  card_relative  ">
+        <a class="card__link" href="/ddd" tabindex="1">
+          <span class="card__favorite">
+            <svg class="icon icon-heart">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+          </span>
+          <span class="card__favorite">
+            <svg class="icon icon-heart-outline">
+              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+            </svg>
+          </span>
+          <div class="card__flex">
+            <div class="card__image  card__image_relative ">
+              <div class="card__progress-bar  is-active ">
+                <div class="card__progress"></div>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/big-card-2@2x.jpg" />
+                <img class="card__photo" src="./img/big-card-2.jpg" alt="Фото лектора" />
+              </picture>
+              <div class="card__label ">
+                <span class="card__label-text">Новое</span>
+              </div>
+              <div class="card__duration">
+                <span class="card__duration-text"> 04:32</span>
+              </div>
+            </div>
+            <p class="card__info">
+              <span class="card__year">2020</span>
+              <span class="card__category">Management</span>
+            </p>
+            <div>
+              <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+              <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+            </div>
+        </a>
+        <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+      </div>
+      </div>
+    </li>
+    <li class="cards-block__item   cards-block__item_relative  ">
+      <div class="card  card_relative  ">
+        <a class="card__link" href="/ddd" tabindex="1">
+          <span class="card__favorite">
+            <svg class="icon icon-heart">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+          </span>
+          <span class="card__favorite">
+            <svg class="icon icon-heart-outline">
+              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+            </svg>
+          </span>
+          <div class="card__flex">
+            <div class="card__image  card__image_relative ">
+              <div class="card__progress-bar  is-active ">
+                <div class="card__progress"></div>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/big-card-1@2x.jpg" />
+                <img class="card__photo" src="./img/big-card-1.jpg" alt="Фото лектора" />
+              </picture>
+              <div class="card__label ">
+                <span class="card__label-text">Новое</span>
+              </div>
+              <div class="card__duration">
+                <span class="card__duration-text"> 04:32</span>
+              </div>
+            </div>
+            <p class="card__info">
+              <span class="card__year">2020</span>
+              <span class="card__category">Management</span>
+            </p>
+            <div>
+              <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+              <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+            </div>
+        </a>
+        <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+      </div>
+      </div>
+    </li>
+    <li class="cards-block__item   cards-block__item_relative  ">
+      <div class="card  card_relative  ">
+        <a class="card__link" href="/ddd" tabindex="1">
+          <span class="card__favorite">
+            <svg class="icon icon-heart">
+              <use xlink:href="img/sprite.svg#icon-heart"></use>
+            </svg>
+          </span>
+          <span class="card__favorite">
+            <svg class="icon icon-heart-outline">
+              <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+            </svg>
+          </span>
+          <div class="card__flex">
+            <div class="card__image  card__image_relative ">
+              <div class="card__progress-bar  is-active ">
+                <div class="card__progress"></div>
+              </div>
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/big-card-2@2x.jpg" />
+                <img class="card__photo" src="./img/big-card-2.jpg" alt="Фото лектора" />
+              </picture>
+              <div class="card__label ">
+                <span class="card__label-text">Новое</span>
+              </div>
+              <div class="card__duration">
+                <span class="card__duration-text"> 04:32</span>
+              </div>
+            </div>
+            <p class="card__info">
+              <span class="card__year">2020</span>
+              <span class="card__category">Management</span>
+            </p>
+            <div>
+              <p class="card__text  card__text_relative "> Длинный текст, посвящённый этой видеолекции, который донесёт основной смысл читателю </p>
+              <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+            </div>
+        </a>
+        <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+      </div>
+      </div>
+    </li>
+    </ul>
+    </section>
+    </div>
+    </section>
+    <!-- end video-content-new -->
+    <!-- begin other-videos -->
+    <section class="other-videos">
+      <div class="container">
+        <h4 class="other-videos__title title title_tiny">Другие видео по теме</h4>
+        <ul class="other-videos__list">
+          <li class="other-videos__item">
+            <div class="card  card_middle  ">
+              <a class="card__link" href="/ddd" tabindex="1">
+                <span class="card__favorite">
+                  <svg class="icon icon-heart">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </span>
+                <span class="card__favorite">
+                  <svg class="icon icon-heart-outline">
+                    <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+                  </svg>
+                </span>
+                <div class="card__flex">
+                  <div class="card__image  card__image_middle ">
+                    <div class="card__progress-bar ">
+                      <div class="card__progress"></div>
+                    </div>
+                    <picture>
+                      <source media="(min-width: 1024px)" srcset="./img/default-card-8@2x.jpg" />
+                      <img class="card__photo" src="./img/default-card-8.jpg" alt="Фото лектора" />
+                    </picture>
+                    <div class="card__label ">
+                      <span class="card__label-text">Новое</span>
+                    </div>
+                    <div class="card__duration">
+                      <span class="card__duration-text"> 04:32</span>
+                    </div>
+                  </div>
+                  <p class="card__info">
+                    <span class="card__year">2020</span>
+                    <span class="card__category">Management</span>
+                  </p>
+                  <div>
+                    <p class="card__text  card__text_middle "> Проектирование клиентского опыта </p>
+                    <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+                  </div>
+              </a>
+              <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+            </div>
+      </div>
+      </li>
+      <li class="other-videos__item">
+        <div class="card  card_middle  ">
+          <a class="card__link" href="/ddd" tabindex="1">
+            <span class="card__favorite">
+              <svg class="icon icon-heart">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </span>
+            <span class="card__favorite">
+              <svg class="icon icon-heart-outline">
+                <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+              </svg>
+            </span>
+            <div class="card__flex">
+              <div class="card__image  card__image_middle ">
+                <div class="card__progress-bar ">
+                  <div class="card__progress"></div>
+                </div>
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="./img/default-card-6@2x.jpg" />
+                  <img class="card__photo" src="./img/default-card-6.jpg" alt="Фото лектора" />
+                </picture>
+                <div class="card__label ">
+                  <span class="card__label-text">Новое</span>
+                </div>
+                <div class="card__duration">
+                  <span class="card__duration-text"> 04:32</span>
+                </div>
+              </div>
+              <p class="card__info">
+                <span class="card__year">2020</span>
+                <span class="card__category">Management</span>
+              </p>
+              <div>
+                <p class="card__text  card__text_middle ">
+                  <svg class="icon icon-fire">
+                    <use xlink:href="img/sprite.svg#icon-fire"></use>
+                  </svg> Анимация персонажа в Рrinciрle
+                </p>
+                <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+              </div>
+          </a>
+          <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+        </div>
+        </div>
+      </li>
+      <li class="other-videos__item">
+        <div class="card  card_middle  ">
+          <a class="card__link" href="/ddd" tabindex="1">
+            <span class="card__favorite">
+              <svg class="icon icon-heart">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </span>
+            <span class="card__favorite">
+              <svg class="icon icon-heart-outline">
+                <use xlink:href="img/sprite.svg#icon-heart-outline"></use>
+              </svg>
+            </span>
+            <div class="card__flex">
+              <div class="card__image  card__image_middle ">
+                <div class="card__progress-bar ">
+                  <div class="card__progress"></div>
+                </div>
+                <picture>
+                  <source media="(min-width: 1024px)" srcset="./img/default-card-7@2x.jpg" />
+                  <img class="card__photo" src="./img/default-card-7.jpg" alt="Фото лектора" />
+                </picture>
+                <div class="card__label ">
+                  <span class="card__label-text">Новое</span>
+                </div>
+                <div class="card__duration">
+                  <span class="card__duration-text"> 04:32</span>
+                </div>
+              </div>
+              <p class="card__info">
+                <span class="card__year">2020</span>
+                <span class="card__category">Management</span>
+              </p>
+              <div>
+                <p class="card__text  card__text_middle ">
+                  <svg class="icon icon-fire">
+                    <use xlink:href="img/sprite.svg#icon-fire"></use>
+                  </svg> Какие скиллы нужны для профессионального роста в UI/UX?
+                </p>
+                <p class="card__speaker-name">Ольга Шевченко, Vintage</p>
+              </div>
+          </a>
+          <a class="card__speaker link" href="#" tabindex="1">Ольга Шевченко, Vintage</a>
+        </div>
+        </div>
+      </li>
+      </ul>
+      </div>
+    </section>
+    <!-- end other-videos -->
+    </main>
+    </div>
+    <!--  -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>

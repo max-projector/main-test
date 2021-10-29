@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Other theme page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+  </head>
+  <body>
+    <div class="overlay js-overlay"></div>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="skip-content" id="skip">
+          <a class="skip-content__link" href="#content" tabindex="1">Skip to Main Content (Press Enter)</a>
+        </div>
+        <div class="header__container container container_wider">
+          <a href="#" class="header__logo logo">
+            <img class="logo__image" src="./img/logo.svg" alt="Логотип Projector" />
+          </a>
+          <button class="header__burger js-burger" type="button" aria-label="Открыть меню">
+            <svg class="icon icon-burger">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="header__close js-close" type="button" aria-label="Закрыть меню">
+            <svg class="icon icon-close-menu">
+              <use xlink:href="img/sprite.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="header__inner js-menu-inner">
+            <button class="header__login header__login_mob js-open-popup-button" type="button" data-popup="login">
+              <svg class="icon icon-user">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+              <span class="js-login">Костянтин Костянтинопільський</span>
+            </button>
+            <nav class="header__menu menu js-menu">
+              <ul class="menu__list">
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Освіта <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/study-image.jpg" alt="Освіта" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Онлайн-курси</span>
+                          <span class="menu__subpoint-subtext">для розвитку в професії</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Гуманітаріум</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Курси для школярів</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Події <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/events-image.jpg" alt="Події" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Whatabout</span>
+                          <span class="menu__subpoint-subtext">global creative community</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Kruрa</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">OFFF Kyiv</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Воркшопи і лекції</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  is-active js-menu-point ">
+                  <a class="menu__link" href="main-page-unlogged.html" tabindex="1">Бібліотека</a>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Медіа <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/events-image.jpg" alt="Медіа" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Telegraf</span>
+                          <span class="menu__subpoint-subtext">провідне українське дизайн-медіа</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Рrjctr Mag</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Youtube</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-facebook">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Новини, роботи, люди</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-telegram">
+                            <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Вакансії та анонси</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-instagram">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Візуальне життя школи </span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Ми <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/we-image.jpg" alt="Ми" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Про Рrojector</span>
+                          <span class="menu__subpoint-subtext">історія і головні ідеї школи</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Люди</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Співпраця</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Контакти</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__actions">
+              <div class="header__restream"> <span>powered by </span><img src="./icons/restream.svg" alt="" /></div>
+              <a class="header__phone" href="tel:0970159272" tabindex="1">097 015-92-72</a>
+              <form class="header__languages js-languages" action="#" method="get">
+                <button class="header__languages-button js-languages-button" type="button" aria-label="Выбор языка" tabindex="1">
+                  <span class="header__languages-text js-languages-text">UKR</span>
+                  <svg class="icon icon-arrow-down">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <ul class="header__languages-list js-languages-options">
+                  <li class="header__languages-item js-languages-item">RU</li>
+                  <li class="header__languages-item js-languages-item">ENG</li>
+                </ul>
+                <select class="header__languages-select js-languages-hidden" id="languages" name="languages" required>
+                  <option value="UKR">UKR</option>
+                  <option value="RU">RU</option>
+                  <option value="ENG">ENG</option>
+                </select>
+              </form>
+              <button class="header__login js-open-popup-button" type="button" data-popup="login" tabindex="1">
+                <svg class="icon icon-user">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <span>Костянтин Костянтинопільський</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="container container_padding">
+        <h1 class="title title_padding account__title js-main-title"> Nastia Anikanova </h1>
+        <main id="content">
+          <div class="inner js-inner">
+            <div class="account__wrapper">
+              <input class="account__radio" id="one" name="group" type="radio" checked />
+              <input class="account__radio" id="two" name="group" type="radio" />
+              <input class="account__radio" id="three" name="group" type="radio" />
+              <div class="account__tabs">
+                <label class="account__tab" id="one-tab" for="one">Підписка</label>
+                <label class="account__tab" id="two-tab" for="two">Аккаунт</label>
+                <label class="account__tab" id="three-tab">Вийти</label>
+              </div>
+              <div class="account__panels">
+                <div class="account__panel" id="first-panel">
+                  <!-- active -->
+                  <div class="account__subcription">
+                    <div>
+                      <span class="account__subcription-status">Активна</span>
+                      <h4>Підписка Projector Library</h4>
+                      <p> Наступний платіж відбудеться 4 березня, 2022. Платіжна карта Visa **** **** **** 2651. </p>
+                      <button class="js-open-popup-button account__subcription-cancel" type="button" data-popup="cancel-subscription-request">
+                        <span class="">Скасувати автоматичне продовження</span>
+                      </button>
+                    </div>
+                    <img src="./img/notebook.png" class="account__subcription-notebook" />
+                  </div>
+                  <!-- active -->
+                  <!-- was active -->
+                  <div class="account__subcription">
+                    <div>
+                      <span class="account__subcription-status">Підписка діє до 4 березня, 2022. </span>
+                      <h4>Підписка Projector Library</h4>
+                      <p> Ми скасували автопродовження підписки, але залишили доступ для всіх лекцій та конференцій. </p>
+                    </div>
+                    <img src="./img/notebook.png" class="account__subcription-notebook" />
+                  </div>
+                  <!-- was active -->
+                  <!-- was need to subcribe -->
+                  <div class="account__subcription">
+                    <div>
+                      <h4> Одна підписка на все — <br />онлайн-конференції та тематичні відеолекції </h4>
+                      <p> Крутий контент на найближчі 12 місяців? Done. Отримуйте доступ до нашої бази відеолекцій, а також до всіх запланованих та вже минулих онлайн-конференцій. Доступ оновлюється щороку автоматично. </p>
+                      <div class="account__btncontainer">
+                        <button class="button js-open-popup-button" type="button" data-popup="subscribe">
+                          <span> Придбати підписку </span>
+                        </button>
+                        <span class="account__price">за 950 ₴ на рік</span>
+                      </div>
+                    </div>
+                    <img src="./img/notebook.png" class="account__subcription-notebook" />
+                  </div>
+                  <!-- was need to subcribe -->
+                  <div class="account__gift">
+                    <div>
+                      <h4>Подаруйте підписку тим, хто в темі</h4>
+                      <p> Ви платите один раз — і забезпечуєте близьку людину контентом на один рік. Подарована підписка не буде оновлюватися щороку, а активувати сертифікат та запустити доступ можливо в будь-який час. </p>
+                      <button class="button js-open-popup-button" data-popup="gift-request">
+                        <a class="button__link" href="#" tabindex="1">Подарувати доступ на рік</a>
+                      </button>
+                    </div>
+                    <img src="./img/presents.png" class="account__subcription-present" />
+                  </div>
+                  <p class="account__support-text"> Щось не працює? Напиши нашій <a href="mailto:name@email.com">службі підтримки</a>
+                  </p>
+                </div>
+                <div class="account__panel" id="second-panel">
+                  <form class="account__form" method="post" novalidate>
+                    <input type="hidden" name="request[id]" value="2434" />
+                    <div class="account__form-tab">
+                      <span>Прізвище</span>
+                      <input type="text" id="request-lastname-gift" name="request[lastname]" aria-label="Прізвище" tabindex="1" />
+                    </div>
+                    <div class="account__form-tab">
+                      <span>Ім’я</span>
+                      <input type="text" id="request-name-gift" name="request[firstname]" aria-label="Ім’я" tabindex="1" />
+                    </div>
+                    <div class="account__form-tab">
+                      <span>Email</span>
+                      <input class="gift-request-popup-form__input--error" type="text" id="request-email-gift" name="request[mail]" aria-label="Email" tabindex="1" />
+                    </div>
+                    <div class="account__form-tab">
+                      <span>Телефон</span>
+                      <input type="text" id="request-phone-gift" name="request[phone]" aria-label="Телефон" tabindex="1" />
+                    </div>
+                    <div>
+                      <div class="checkbox-group">
+                        <label>
+                          <input id="agree" type="checkbox" name="agree" value="1" />
+                        </label>
+                        <div class="account__accept-text"> Погоджуюсь отримувати повідомлення пропозиції, акції Projector </div>
+                      </div>
+                    </div>
+                    <div class="button js-socials" data-popup="request">
+                      <a class="button__link" href="#" tabindex="1">Зберегти зміни</a>
+                    </div>
+                  </form>
+                  <p class="account__support-text"> Щось не працює? Напиши нашій <a href="mailto:name@email.com">службі підтримки</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- begin gift-request-popup -->
+      <div class="gift-request-popup-form js-popup" data-name="gift-request">
+        <div class="login-popup gift-request-popup-form__inner">
+          <button class="gift-request-popup-form__close js-popup-close">
+            <svg class="icon icon-close-popup">
+              <use xlink:href="img/sprite.svg#icon-close-popup"></use>
+            </svg>
+          </button>
+          <div class="gift-request-popup-form__logo logo_center">
+            <img class="gift-request-popup-form__logoImg" src="./img/logo.svg" alt="Логотип Projector" />
+          </div>
+          <p class="gift-request-popup-form__text">Подарувати бібліотеку</p>
+          <form class="gift-request-popup-form__inputbox js-lead" method="post" novalidate>
+            <input type="hidden" name="request[id]" value="2434" />
+            <input class="gift-request-popup-form__input" type="text" placeholder="Прізвище" id="request-lastname-gift" name="request[lastname]" aria-label="Прізвище" tabindex="1" />
+            <input class="gift-request-popup-form__input" type="text" placeholder="Ім’я" id="request-name-gift" name="request[firstname]" aria-label="Ім’я" tabindex="1" />
+            <input class="gift-request-popup-form__input gift-request-popup-form__input--error" type="text" placeholder="Email" id="request-email-gift" name="request[mail]" aria-label="Email" tabindex="1" />
+            <input class="gift-request-popup-form__input" type="text" placeholder="Телефон" id="request-phone-gift" name="request[phone]" aria-label="Телефон" tabindex="1" />
+            <button class="gift-request-popup-form__button gift-request-popup-form__button__red js-socials" type="submit">Надіслати</button>
+          </form>
+        </div>
+      </div>
+      <!-- end gift-request-popup -->
+      <!-- begin cancel-subscription-popup -->
+      <div class="cancel-subscription-popup js-popup" data-name="cancel-subscription-request">
+        <div class="cancel-subscription-popup__inner">
+          <button class="cancel-subscription-popup__close js-popup-close">
+            <svg class="icon icon-close-popup">
+              <use xlink:href="img/sprite.svg#icon-close-popup"></use>
+            </svg>
+          </button>
+          <p class="cancel-subscription-popup__text">Скасувати автопродовження?</p>
+          <p class="cancel-subscription-popup__desc"> Контент залишиться з тобою до 5 березня, 2022, але підписка не продовжуватиметься автоматично. <br />
+            <br /> Візьми перерву, якщо потрібно. І повертайся знову :)
+          </p>
+          <div class="cancel-subscription-popup__continue js-open-popup-button">
+            <a class="" href="#" tabindex="1">Залишити підписку</a>
+          </div>
+          <button class="cancel-subscription-popup__leave"> Зупинити автопродовження </button>
+        </div>
+      </div>
+      <!-- end cancel-subscription-request -->
+      <!--  -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>

@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Search results empty page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" media="all" href="css/app.css" />
+  </head>
+  <body>
+    <div class="overlay js-overlay"></div>
+    <!-- BEGIN content -->
+    <div class="out">
+      <!-- begin header -->
+      <header class="header js-header">
+        <div class="skip-content" id="skip">
+          <a class="skip-content__link" href="#content" tabindex="1">Skip to Main Content (Press Enter)</a>
+        </div>
+        <div class="header__container container container_wider">
+          <a href="#" class="header__logo logo">
+            <img class="logo__image" src="./img/logo.svg" alt="Логотип Projector" />
+          </a>
+          <button class="header__burger js-burger" type="button" aria-label="Открыть меню">
+            <svg class="icon icon-burger">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <button class="header__close js-close" type="button" aria-label="Закрыть меню">
+            <svg class="icon icon-close-menu">
+              <use xlink:href="img/sprite.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <div class="header__inner js-menu-inner">
+            <button class="header__login header__login_mob js-open-popup-button" type="button" data-popup="login">
+              <svg class="icon icon-user">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+              <span class="js-login">Костянтин Костянтинопільський</span>
+            </button>
+            <nav class="header__menu menu js-menu">
+              <ul class="menu__list">
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Освіта <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/study-image.jpg" alt="Освіта" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Онлайн-курси</span>
+                          <span class="menu__subpoint-subtext">для розвитку в професії</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Гуманітаріум</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Курси для школярів</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Події <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/events-image.jpg" alt="Події" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Whatabout</span>
+                          <span class="menu__subpoint-subtext">global creative community</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Kruрa</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">OFFF Kyiv</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Воркшопи і лекції</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  is-active js-menu-point ">
+                  <a class="menu__link" href="main-page-unlogged.html" tabindex="1">Бібліотека</a>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Медіа <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/events-image.jpg" alt="Медіа" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Telegraf</span>
+                          <span class="menu__subpoint-subtext">провідне українське дизайн-медіа</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Рrjctr Mag</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Youtube</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-facebook">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Новини, роботи, люди</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-telegram">
+                            <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Вакансії та анонси</span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-icon">
+                          <svg class="icon icon-instagram">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                          </svg>
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Візуальне життя школи </span>
+                        </div>
+                        <svg class="icon icon-arrow-open">
+                          <use xlink:href="img/sprite.svg#icon-arrow-open"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__point  js-menu-point-with-sublist ">
+                  <a class="menu__link" tabindex="1"> Ми <svg class="icon icon-arrow-down">
+                      <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="menu__sublist js-sublist">
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-image">
+                          <img class="menu__subpoint-pic" src="./img/we-image.jpg" alt="Ми" />
+                        </div>
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Про Рrojector</span>
+                          <span class="menu__subpoint-subtext">історія і головні ідеї школи</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Люди</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Співпраця</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="menu__subpoint js-menu-point">
+                      <a class="menu__subpoint-link" href="#">
+                        <div class="menu__subpoint-text">
+                          <span class="menu__subpoint-name">Контакти</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__actions">
+              <div class="header__restream"> <span>powered by </span><img src="./icons/restream.svg" alt="" /></div>
+              <a class="header__phone" href="tel:0970159272" tabindex="1">097 015-92-72</a>
+              <form class="header__languages js-languages" action="#" method="get">
+                <button class="header__languages-button js-languages-button" type="button" aria-label="Выбор языка" tabindex="1">
+                  <span class="header__languages-text js-languages-text">UKR</span>
+                  <svg class="icon icon-arrow-down">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg>
+                </button>
+                <ul class="header__languages-list js-languages-options">
+                  <li class="header__languages-item js-languages-item">RU</li>
+                  <li class="header__languages-item js-languages-item">ENG</li>
+                </ul>
+                <select class="header__languages-select js-languages-hidden" id="languages" name="languages" required>
+                  <option value="UKR">UKR</option>
+                  <option value="RU">RU</option>
+                  <option value="ENG">ENG</option>
+                </select>
+              </form>
+              <button class="header__login js-open-popup-button" type="button" data-popup="login" tabindex="1">
+                <svg class="icon icon-user">
+                  <use xlink:href="img/sprite.svg#icon-user"></use>
+                </svg>
+                <span>Костянтин Костянтинопільський</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="container container_padding">
+        <h1 class="title title_padding js-main-title">Библиотека</h1>
+        <div class="inner js-inner">
+          <!-- begin search -->
+          <div class="search">
+            <div style="display: flex; justify-content: flex-end">
+              <form class="search__form" action="#" method="get">
+                <input class="search__input js-search" type="text" placeholder="Название, тема, имя лектора" id="search" name="search" aria-label="Поиск" tabindex="1" />
+                <span class="search__icon">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </span>
+                <button class="search__close js-search-clear" type="button" tabindex="1">
+                  <svg class="icon icon-close-search">
+                    <use xlink:href="img/sprite.svg#icon-close-search"></use>
+                  </svg>
+                </button>
+                <button class="search__button" type="submit" tabindex="1">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- end search -->
+          <!-- begin sidebar -->
+          <div class="sidebar js-filters-slider">
+            <div style="display: flex; flex-direction: column; align-content: center">
+              <ul class="sidebar__list">
+                <li class="sidebar__point  is-disabled sidebar__point_padding  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name">
+                      <svg class="icon icon-mark">
+                        <use xlink:href="img/sprite.svg#icon-mark"></use>
+                      </svg> Избранные888</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  is-disabled sidebar__point_padding  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name">
+                      <svg class="icon icon-clock">
+                        <use xlink:href="img/sprite.svg#icon-clock"></use>
+                      </svg> История</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  is-disabled sidebar__point_margin sidebar__point_padding  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name">
+                      <svg class="icon icon-fire">
+                        <use xlink:href="img/sprite.svg#icon-fire"></use>
+                      </svg> Популярное</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  sidebar__point_desktop is-disabled is-active  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name"> Все темы</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  is-disabled  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name"> Interfaces</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  is-disabled  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name"> Graphics</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  is-disabled  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name"> Development</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  is-disabled  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name"> Management</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  is-disabled  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name"> Marketing</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+                <li class="sidebar__point  is-disabled  js-sidebar-point" " tabindex=" 1">
+                  <button class="sidebar__button" type="button">
+                    <span class="sidebar__name"> Animation</span>
+                    <span class="sidebar__count"></span>
+                  </button>
+                </li>
+              </ul>
+              <div class="filter-section">
+                <span class="option-title">Формат</span>
+                <label for="s-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="s-option" name="selector" tabindex="1" />
+                    <span>Всі</span>
+                  </div>
+                  <span>2</span>
+                </label>
+                <label for="q-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="q-option" name="selector" tabindex="1" />
+                    <span>Відеолекції</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="w-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="w-option" name="selector" tabindex="1" />
+                    <span>Конференції</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="e-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="e-option" name="selector" tabindex="1" />
+                    <span>Плейлисти</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="r-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="r-option" name="selector" tabindex="1" />
+                    <span>Відеокурси</span>
+                  </div>
+                  <span>22</span>
+                </label>
+              </div>
+              <div class="filter-section">
+                <span class="option-title">Напрямки</span>
+                <label for="ll-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="ll-option" name="selector-second" tabindex="1" />
+                    <span>Всі</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="x-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="x-option" name="selector-second" tabindex="1" />
+                    <span>Dev & DS</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="c-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="c-option" name="selector-second" tabindex="1" />
+                    <span>Graphics</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="rr-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="rr-option" name="selector-second" tabindex="1" />
+                    <span>Interface Design</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="b-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="b-option" name="selector-second" tabindex="1" />
+                    <span>Management</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="t-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="t-option" name="selector-second" tabindex="1" />
+                    <span>Marketing</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="m-option" class="l-radio">
+                  <div>
+                    <input type="radio" id="m-option" name="selector-second" tabindex="1" />
+                    <span>Creative Ads</span>
+                  </div>
+                  <span>22</span>
+                </label>
+              </div>
+              <div class="filter-section disabled">
+                <span class="option-title">Рівень</span>
+                <label for="r-option" class="l-radio">
+                  <div>
+                    <input disabled type="radio" id="r-option" name="selector" tabindex="1" />
+                    <span>Будь-який</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="r-option" class="l-radio">
+                  <div>
+                    <input disabled type="radio" id="r-option" name="selector" tabindex="1" />
+                    <span>Початківцям</span>
+                  </div>
+                  <span>22</span>
+                </label>
+                <label for="r-option" class="l-radio">
+                  <div>
+                    <input disabled type="radio" id="r-option" name="selector" tabindex="1" />
+                    <span>Спеціалістам</span>
+                  </div>
+                  <span>22</span>
+                </label>
+              </div>
+              <div class="sidebar_gift" style="
+      border: 1px solid #201e29;
+      border-radius: 8px;
+      padding: 20px 16px;
+      max-width: 193px;
+    ">
+                <div style="font-size: 16px; line-height: 24px; margin-bottom: 8px"> Подаруйте підписку тим, хто в темі </div>
+                <div style="font-size: 12px; color: #8c899a; line-height: 18px"> Річний доступ за 950 грн до всієї відеобібліотеки та онлайн конференцій </div>
+                <div class="button button_smaller" style="margin-top: 15px">
+                  <button class="button__link" type="button"> Подарувати </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end sidebar -->
+          <main class="main" id="content">
+            <div class="search-results-empty">
+              <img class="search-results-empty__image" src="./img/empty-search-smile.svg" alt="Смайл: ничего не найдено" />
+              <p class="search-results-empty__text">Такого видео у нас пока нет. Но есть <button class="search-results-empty__link link link_gold-grey" type="button"><span class="search-results-empty__count">48</span> популярных видео</button>, которые мы рекомендуем!</p>
+              <button class="button button_dark js-clear-button">Очистить поиск</button>
+            </div>
+          </main>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>
